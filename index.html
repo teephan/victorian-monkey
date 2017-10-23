@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Victorian Monkey</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Oswald|Raleway" rel="stylesheet">
+
+</head>
+<body>
+<!-- PAGE 1 / HEADER -->
+    <header>
+
+        <nav class="navBar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+
+                <li><a href="#About">About</a></li>
+
+                <li><a href="#Menu">Menu</a></li>
+
+                <li><a href="#Reservations">Reservations</a></li>
+
+                <li><a href="#ContactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <a href="#">
+                <h1 class="the">The<h1>
+                <h1>Victorian</h1> 
+                <h1>Monkey</h1>
+            </a>
+        </div>
+    </header>
+
+<!-- PAGE 2 / ABOUT -->
+<section>
+    <div class="about">
+
+        <div class="interior">
+            <img class="interior" src="images/interior.jpg" alt="Electic bar with lots of tables, lights, and framed retro paintings">
+        </div>
+
+        <div class="aboutSection">
+            <h2>About</h2>
+
+            <p>Step inside an eclectic atmosphere not found anywhere else. We have 18 beers on tap (including some amazing craft beers) and a large selection of wines. Kick back and enjoy great food and watch the game on our numerous TV's.</p>
+            <p>We offer games you can play solo or with friends with the largest being our 12 ft. shuffleboard table.</p>
+            <p>We can accommodate large groups and teams. Ask about our team sponsorship program.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE 3 / GALLERY -->
+<!-- Flickity -->
+
+<section class="galleries">
+    <div class="galleries" data-flickity='{ "autoPlay": 2500, "pageDots": false,  "wrapAround": true,  "pauseAutoPlayOnHover": true }'>
+        <div class="carousel-cell"><img src="images/entrance.jpg" alt="Tacos and dip with veggies"></div>
+        <div class="carousel-cell"><img src="images/food2.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="images/foosball.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="images/food4.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="images/decor.jpg" alt=""></div>
+    </div>
+</section>
+
+<!-- PAGE 4 / MENU  -->
+
+<section class="menu">
+    <div class="menu">
+        <h2 class="menuLogo">Menus</h2>
+
+        <div class="menuNav">
+            <div class="menuDiv">
+                <a href="#Lunch">
+                    <li>
+                        <figure>
+                            <img src="images/food.jpg" alt="">
+                        </figure>
+
+                        <figcaption>
+                            <h2>Lunch</h2>
+                        </figcaption>
+                    </li>
+                </a>
+            </div>
+
+            <div class="menuDiv">
+                <a href="#Drinks">
+                    <li>
+                        <figure>
+                            <img src="images/food5.jpg" alt="">
+                        </figure>
+
+                        <figcaption>
+                            <h2>Drinks</h2>
+                        </figcaption>
+                    </li>
+                </a>
+            </div>
+            
+            <div class="menuDiv">
+                <a href="#Dinner">
+                    <li>
+                        <figure>
+                            <img src="images/food3.jpg" alt="">
+                        </figure>
+
+                        <figcaption>
+                            <h2>Dinner</h2>
+                        </figcaption>
+                    </li>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE 5 / RESERVATIONS -->
+
+<section class="reservations">
+    <div class="reservations">
+        <h2>Reservations</h2>
+
+        <div class="button">
+            <a class="buttonBook" href=mailto:thevictorianmonkey@outlook.com>
+                <button>
+                    Book a Reservation
+                </button>
+            </a>
+        </div>
+
+        <p class="reservations">
+        For reservations we invite you to email us using the link above or call us at 416-264-0783.</p>
+        
+        <p class="reservations">
+        All reservations will be held for 15 minutes after the reserved time. After 15 minutes, we can no longer guarantee your reservation but will do our best to accommodate your party.</p>
+        
+        <p class="reservations">
+        For all other inquiries, please telephone or e-mail us. We will do our best to return your message within 24 hours. We look forward to seeing you at The Victorian Monkey! </p>
+    </div>
+</section>
+
+<!-- PAGE 6 / CONTACT US -->
+
+<section class="contactUs">
+    <h2>Contact Us</h2>
+
+    <div class="flex">
+        <div class="contact">
+            <h4>2386 Kingston Rd</h4>
+            <p>Scarborough, ON</p>
+            <p>416-264-0783</p>
+            <p><a href="mailto:thevictorianmonkey@outlook.com"></a>thevictorianmonkey@outlook.com</p>
+        
+            <h4>Hours of Operation</h4>
+            <p> Monday - CLOSED</p>
+            <p>Tuesday - Thursday: 12:00PM - 11:00PM</p>
+            <p>Friday and Saturday: 12:00PMM - 1:00AM</p>
+            <p>Sunday - 12:00PM - 10:00PM</p>
+        </div>
+
+        <div class="form">
+            <form class="contactUs" action="sendemail.php" autocomplete="off" name="contactUs">
+                <h4>Name *</h4>
+                <input type="text" name="fullName" required="true" placeholder="Please enter your full name...">
+
+                <h4>Email Address *</h4>
+                <input type="email" name="email">
+                
+                <h4> Message * </h4>
+                <div class="message">
+                <textarea name="specialInstructions" cols="30" rows="10" required="yes"></textarea>
+                </div>
+                
+                <div class="submitWrapper">
+                <input class="submit" type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE 7 / MAP -->
+<section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.1172922490077!2d-79.25282418512977!3d43.70811147911948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ce53fec11acf%3A0x6580c95f44cf3180!2sVictorian+Monkey!5e0!3m2!1sen!2sca!4v1505094996697" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script>
+    $(function() {
+        $('.galleries').flickity({
+            wrapAround: true,
+            freeScroll: true,
+            bgLazyLoad: true
+        })
+    });
+</script>
+</body>
+</html>
